@@ -1,0 +1,9 @@
+{
+    "name": "hellophpfn",
+    "description": "example function",
+    "type": "project",
+    "require": {
+        "tkotosz/fn-fdk-php": "^1.0"
+    },
+    "license": "MIT"
+}
