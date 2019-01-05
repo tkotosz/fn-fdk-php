@@ -2,6 +2,8 @@
 
 namespace Tkotosz\FnPhpFdk\Fdk;
 
+use DateTimeImmutable;
+
 class Context
 {
     private $config;
