@@ -13,14 +13,14 @@ Or just use the [php init image](https://github.com/tkotosz/fn-php-init) to crea
 ```
 fn init --init-image tkotosz/fn-php-init myfunc
 ```
-This will generate the necessary files for you function including the composer json and docker file to install this fdk.
+This will generate the necessary files for your function including the composer json and docker file to install this fdk.
 
 ## Creating a PHP Function
 
 Writing a PHP function is simply a matter of writing a handler function
 that you pass to the FDK to invoke each time your function is called.
 
-Start by creating a php function with `fn init` and installing the FDK:
+Start by creating a php function with `fn init`:
 
 ```sh
 fn init --init-image tkotosz/fn-php-init phpfunc
@@ -45,8 +45,11 @@ $fdk->handle(function ($input) {
 });
 ```
 
-The handler function takes the input that is sent to the function and returns a response. By default the input is json which converted to an array and the response is an array which automatically converted to json.
-Using the FDK you don't have to worry about reading the http request or sending back the response. The FDK let's you focus on your function logic and not the mechanics.
+The handler function takes the input that is sent to the function and returns a response.
+By default the input is treated as json which automatically converted to an array 
+and the response is also an array (or json serializable object) which automatically converted to json.
+Using the FDK you don't have to worry about reading the http request or sending back the response.
+The FDK let's you focus on your function logic and not the mechanics.
 
 Now run it!
 
@@ -79,7 +82,7 @@ Now you have a basic running php function that you can modify and add what you w
 
 Function invocation context details are available through an optional function argument.
 To receive a context object, simply add a second argument to your handler function.
-in the following example the `callId` is obtained from the context and included in 
+In the following example the `callId` is obtained from the context and included in 
 the response message:
 
 ```php
