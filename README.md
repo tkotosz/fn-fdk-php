@@ -115,11 +115,11 @@ You should see a similar output:
 
 The context contains other context information about the request such as: 
 
-* `ctx->getConfig` : An Object containing function config variables (from the environment variables) 
+* `ctx->getConfig` : An object containing function config variables (from the environment variables) 
 * `ctx->getHeaders` : An object containing input headers for the event as lists of strings
 * `ctx->getDeadline` : A `DateTimeImmutable` object indicating when the function call must be processed by 
 * `ctx->getCallId` : The call ID of the current call 
-* `ctx->getId` : The Function ID of the current function 
+* `ctx->getId` : The function ID of the current function 
 * `ctx->getMemory` : Amount of ram in MB allocated to this function 
 * `ctx->getContentType` : The incoming request content type (if set, otherwise null)
 * `ctx->setResponseHeader(key,values...)` : Sets a response header to one or more values 
