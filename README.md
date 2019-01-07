@@ -1,6 +1,6 @@
 # PHP Fn Development Kit (FDK)
 
-fn-fdk-go provides convenience functions for writing php fn code
+fn-fdk-go provides convenience functions for writing php [fn](https://github.com/fnproject/fn) code
 
 ## Installing fn-fdk-php
 
