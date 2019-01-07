@@ -172,8 +172,8 @@ $fdk->handle(function ($input, $context) {
     $context->setResponseStatus(201);
     $context->setResponseContentType('text/plain');
     $context->setResponseHeader('X-Awesomeness-level', 100);
-    $context->addResponseHeader('X-Awesomene-number', 1);
-    $context->addResponseHeader('X-Awesomene-number', 2);
+    $context->addResponseHeader('X-Awesome-number', 1);
+    $context->addResponseHeader('X-Awesome-number', 2);
     return 'Hello '. ($input ?: 'World');
 }, ['inputMode' => 'string']);
 ```
